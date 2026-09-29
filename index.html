@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clear-day">
+  <div id="sky"></div>
+
+  <main>
+    <form id="search">
+      <input type="search" id="q" placeholder="Search for a city" aria-label="City name">
+      <button type="submit">Search</button>
+      <button type="button" id="locate">My location</button>
+    </form>
+
+    <p id="status" aria-live="polite"></p>
+
+    <section id="weather" hidden>
+      <div class="now">
+        <h1 id="place"></h1>
+        <p id="when"></p>
+        <div class="temp"><span id="temp"></span><span id="unitLabel"></span></div>
+        <p class="cond"><span id="icon"></span> <span id="cond"></span></p>
+        <p id="range"></p>
+      </div>
+
+      <div class="details" id="details"></div>
+
+      <h2>Next 5 days</h2>
+      <ul class="forecast" id="forecast"></ul>
+
+      <button id="unitBtn" type="button"></button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
